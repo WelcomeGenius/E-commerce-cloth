@@ -8,6 +8,9 @@ import credentials from './middleware/credentials.js'
 import { handleRouteError } from './controllers/errorController.js'
 import connectDB from './config/dbConnection.js'
 import registerRouter from './routes/register.js'
+import authRouter from './routes/login.js'
+import refreshRouter from './routes/refresh.js'
+import logoutRouter from './routes/logout.js'
 
 // the port for the app to listen on
 const PORT = process.env.PORT || 3500
@@ -32,6 +35,9 @@ app.use(cookieParser())
 
 // routes which are important
 app.use('/register', registerRouter)
+app.use('/login', authRouter)
+app.use('/refresh', refreshRouter)
+app.use('/logout', logoutRouter)
 
 // handles the route error for all undefined routes
 app.all('*', handleRouteError)
