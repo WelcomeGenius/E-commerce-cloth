@@ -5,7 +5,7 @@
 
 header {
   display: flex;
-  width: 1366px;
+  width: 100%; /* updated to 100% to fill screen ---ylc*/
   height: 111px;
   padding-top: 33.476px;
   justify-content: space-between;
@@ -216,4 +216,9 @@ i {
 .boxes {
     display: flex;
     justify-content: space-evenly;
+}
+
+/* about page styles */
+#about-img{
+  width: 100%;
 }
