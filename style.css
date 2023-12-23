@@ -283,3 +283,45 @@ i {
   cursor: pointer;
   font-size: 16px; 
 }
+
+.founders-section{
+  background: #FBFBFB;
+  padding: 50px;
+}
+
+.founders{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.founders-grid {
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjust the images and spacing*/
+.HM-Jawad,
+.Furqan-Abid,
+.Abdullah-Ah,
+.Abar-Khan {
+  margin-right: 15px; 
+}
+
+/*Adjust styling for images and names */
+.founders-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.founders-grid h3 {
+  display: flex;
+  margin-top: 32px;
+  text-align: center;
+  align-items: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+}
