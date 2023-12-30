@@ -390,11 +390,6 @@ h3 {
   margin-left: 40%;
 }
 
-.last-footer {
-  width: 100%;
-  height: 108px;
-}
-
 body > footer > hr {
   width: 80%;
   margin: auto;
@@ -428,5 +423,22 @@ body > footer > div.last-footer > div:nth-child(2) {
   color: blue;
 }
 
-@media (max-width: 350px) {
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.last-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  color: darkslateblue;
 }
